@@ -1,0 +1,76 @@
+.card {
+    width: 480px;
+    min-height: 240px;
+    background-color: rgb(64, 100, 223);
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    border-radius: 8px;
+}
+
+.question {
+    margin: 20px;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+}
+
+.answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 10px 40px;
+}
+
+.answer {
+    width: 180px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(253, 190, 66);
+    padding: 6px;
+    margin: 10px 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: rgb(87, 86, 86);
+}
+
+.answer:focus {
+    outline: none;
+}
+
+.answer.wrong {
+    background-color: rgb(236, 56, 75);
+}
+
+.answer.correct {
+    background-color: rgb(145, 242, 207);
+}
+
+@media (max-width: 600px) {
+    .card {
+        margin: 5px;
+        width: 280px;
+        min-height: 168px;
+    }
+
+    .question {
+        margin: 10px 5px;
+        font-size: 16px;
+    }
+    .answers {
+        padding: 10px;
+    }
+    .answer {
+        width: 100px;
+        margin: 5px 5px 10px 5px;
+        padding: 5px 2px;
+        font-size: 14px;
+    }
+}
+
+@media not all and (pointer: coarse) {
+    .answer:hover {
+        background: rgb(251, 171, 60);
+        color: white;
+    }
+}

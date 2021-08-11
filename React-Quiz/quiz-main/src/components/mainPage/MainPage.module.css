@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.background {
+    background-color: rgb(215, 210, 214);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    font-size: 48px;
+    color: rgb(156, 26, 78);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+}
